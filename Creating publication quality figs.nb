@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1772078,      31875]
-NotebookOptionsPosition[   1753430,      31557]
-NotebookOutlinePosition[   1753867,      31574]
-CellTagsIndexPosition[   1753824,      31571]
+NotebookDataLength[   1773686,      31922]
+NotebookOptionsPosition[   1754709,      31599]
+NotebookOutlinePosition[   1755146,      31616]
+CellTagsIndexPosition[   1755103,      31613]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -29909,8 +29909,8 @@ ysGafrusqz1MrLiQ3f9xMgdJbUdOpmyjwCucO9R5yRiVJpu99w2r5l3W8dzr
          "Meta" -> <|
           "DefaultHighlight" -> {"Dynamic", None}, "Index" -> {}, "Function" -> 
            ListPlot, "GroupHighlight" -> False|>|>],
-       ImageSizeCache->{{4.503599627370496*^15, -4.503599627370496*^15}, {
-        4.503599627370496*^15, -4.503599627370496*^15}}],
+       ImageSizeCache->{{113.70554906728313`, 
+        251.88939672353314`}, {-18.616039123677268`, 2.555835876322732}}],
       Selectable->False]},
     Annotation[{{
        Annotation[{
@@ -31552,6 +31552,48 @@ ysGafrusqz1MrLiQ3f9xMgdJbUdOpmyjwCucO9R5yRiVJpu99w2r5l3W8dzr
  CellLabel->
   "Out[824]=",ExpressionUUID->"572b5473-a362-4626-9023-ffaff30e40fb"]
 }, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Other tools", "Chapter",
+ CellChangeTimes->{{3.950935645980668*^9, 
+  3.9509356474103937`*^9}},ExpressionUUID->"7ade6a5e-9aca-4b5e-9052-\
+ed5b292ccb71"],
+
+Cell["\<\
+https://mathematica.stackexchange.com/questions/16324/is-there-a-mathematica-\
+equivalent-to-matlabs-logspace\
+\>", "Text",
+ CellChangeTimes->{
+  3.95093572185073*^9},ExpressionUUID->"d3af1b57-b31e-4e3c-8ab9-603452ff12ad"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"fSpace", "[", 
+   RowBox[{"min_", ",", "max_", ",", "steps_", ",", 
+    RowBox[{"f_", ":", "Log"}]}], "]"}], ":=", 
+  RowBox[{
+   RowBox[{"InverseFunction", "[", 
+    RowBox[{
+     RowBox[{"ConditionalExpression", "[", 
+      RowBox[{
+       RowBox[{"f", "[", "#", "]"}], ",", 
+       RowBox[{"min", "<", "#", "<", "max"}]}], "]"}], "&"}], "]"}], "/@", 
+   RowBox[{"Range", "[", 
+    RowBox[{
+     RowBox[{"f", "@", "min"}], ",", 
+     RowBox[{"f", "@", "max"}], ",", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"f", "@", "max"}], "-", 
+        RowBox[{"f", "@", "min"}]}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{"steps", "-", "1"}], ")"}]}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.95093571185995*^9, 
+  3.950935711864375*^9}},ExpressionUUID->"21b7196b-a626-419a-b8a4-\
+6a19c92cfffe"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -31868,13 +31910,18 @@ Cell[1645773, 29494, 798, 19, 29, "Input",ExpressionUUID->"d0581610-61e1-418c-b0
 Cell[1646574, 29515, 1867, 51, 90, "Input",ExpressionUUID->"a6ef7929-6b68-42af-b6ae-ee5a0316a285"],
 Cell[CellGroupData[{
 Cell[1648466, 29570, 339, 7, 29, "Input",ExpressionUUID->"a835a70d-849f-4112-b059-e2a93310e327"],
-Cell[1648808, 29579, 30402, 590, 245, "Output",ExpressionUUID->"82493f6a-90fa-4281-9243-92fdf785fb90"]
+Cell[1648808, 29579, 30391, 590, 245, "Output",ExpressionUUID->"82493f6a-90fa-4281-9243-92fdf785fb90"]
 }, Open  ]],
-Cell[1679225, 30172, 190, 3, 33, "Text",ExpressionUUID->"398cb6cb-e1e7-4577-aa8c-fdf33f816e61"],
+Cell[1679214, 30172, 190, 3, 33, "Text",ExpressionUUID->"398cb6cb-e1e7-4577-aa8c-fdf33f816e61"],
 Cell[CellGroupData[{
-Cell[1679440, 30179, 341, 8, 29, "Input",ExpressionUUID->"5e740d7d-a43c-4485-ab88-6604f13d765d"],
-Cell[1679784, 30189, 73606, 1363, 236, "Output",ExpressionUUID->"572b5473-a362-4626-9023-ffaff30e40fb"]
+Cell[1679429, 30179, 341, 8, 29, "Input",ExpressionUUID->"5e740d7d-a43c-4485-ab88-6604f13d765d"],
+Cell[1679773, 30189, 73606, 1363, 236, "Output",ExpressionUUID->"572b5473-a362-4626-9023-ffaff30e40fb"]
 }, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[1753428, 31558, 158, 3, 56, "Chapter",ExpressionUUID->"7ade6a5e-9aca-4b5e-9052-ed5b292ccb71"],
+Cell[1753589, 31563, 232, 5, 33, "Text",ExpressionUUID->"d3af1b57-b31e-4e3c-8ab9-603452ff12ad"],
+Cell[1753824, 31570, 857, 25, 49, "Input",ExpressionUUID->"21b7196b-a626-419a-b8a4-6a19c92cfffe"]
 }, Open  ]]
 }, Open  ]]
 }
